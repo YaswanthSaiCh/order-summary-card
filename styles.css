@@ -1,0 +1,121 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  background: url("./images/pattern-background-desktop.svg") no-repeat;
+  background-color: hsl(225, 100%, 94%);
+  font-family: 'Red Hat Display', sans-serif;
+}
+.hero-image {
+  width: 100%;
+  margin-bottom: 2rem;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card-container{
+    height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.card-body {
+  background-color: hsl(225, 100%, 98%);
+  max-width: 375px;
+  border-radius: 1rem;
+}
+#summary-heading {
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: 900;
+}
+.card-summary p {
+  text-align: center;
+  margin: 0 1rem 1rem 1rem;
+  padding: 0 1rem 0;
+  
+}
+#summary{
+  color: hsl(224, 23%, 55%);
+  font-size: 16px;
+  font-weight: 500;
+}
+.card-plan {
+    background-color: hsla(224, 42%, 72%, 0.062);
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 2.5rem;
+    padding: 1rem 1rem;
+    border-radius: 0.8rem;
+}
+.card-plan h5{
+  font-weight: 600;
+}
+.card-plan p{
+  color: hsl(224, 23%, 55%);
+}
+.card-plan #music-icon{
+  margin-right: 1rem;
+}
+
+.card-plan #change{
+  margin-left: 2.5rem;
+}
+.card-plan #change:hover{
+  text-decoration: none;
+  color: hsl(268, 90%, 49%);
+}
+.card-payment{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+}
+.card-payment #primary{
+  background-color: hsl(245, 75%, 52%);
+  color: hsl(225, 100%, 98%);
+  padding: 0.7rem 1rem;
+  margin: 0 3rem;
+  font-weight: 700;
+  border-radius: 0.4rem;
+  border-style: none;
+  box-shadow: 7px 7px 10px hsla(245, 75%, 52%, 0.39);
+  cursor: pointer;
+}
+.card-payment #primary:hover{
+  background-color: hsl(268, 90%, 49%);
+  transition: 0.2s;
+}
+.card-payment #secondary{
+
+  background-color: hsl(225, 100%, 98%);
+  color: hsl(224, 23%, 55%);
+  font-weight: 700;
+  margin: 1rem 3rem 0.75rem 3rem;
+  padding: 0.7rem 1rem;
+  border-radius: 0.4rem;
+  border-style: none;
+  cursor: pointer;
+}
+.card-payment #secondary:hover{
+  color: #000;
+  transition: 0.2s ease;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+@media (max-width: 768px) {
+  body{
+    background: url("./images/pattern-background-mobile.svg") no-repeat cover;
+    background-color: hsl(225, 100%, 94%);
+  }
+  .card-container{
+    padding: 0rem 5rem;
+  }
+  }
